@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>student registration form</title>
+   
+    <STYLE>
+
+p{
+    padding: 30px;
+    border:10px double black;
+    text-align: center;
+    margin: 20px;
+    height: 120px;
+    background-color: rgb(141, 239, 239);
+    font-size: 30px;
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 15px 30px;
+    font-size: 17px;
+    padding: 8px;
+    background-image: url("1364073.jpg");
+}
+.container{
+    background-color: #f2f2f2;
+    padding: 5px 20px 15px 20px;
+    border: 2px solid lightgray;
+    border-radius: 6px;
+}
+input[type="text"],input[type="email"],input[type="number"],input[type="date"],select,textarea {
+width:100%;
+padding: 12px;
+border: 1px solid #ccc;
+border-radius: 5px;
+margin: 10px;
+}
+fieldset{
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+input[type="submit"],input[type="reset"]{
+    background-color:#4daea1;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 20%;
+}
+
+    </STYLE>
+
+</head>
+<body>
+    <div class="container">
+    <p> <b>STUDENT REGESTRATION FORM</b> </p>
+    <form action="">
+        <h3> STUDENT NAME : <input type="text"name="name" required placeholder="Enter your name"></h3>
+        <h3> FATHER NAME : <input type="text"name="fname"required placeholder="Father's name"></h3>
+        <h3> MOTHER NAME:<input type="text"name="mname"required placeholder="Mother's name"></h3>
+        <h3>PHONE NUMBER :<input type="number" name="pnumber" id="pnumber"required placeholder="Enter phone no."></h3>
+        <h3>EMAIL ID: <input type="email" name="semail" id="semail"required placeholder="Enter your email"></h3>
+        <h3>
+            <fieldset>
+                <legend>GENDER</legend>
+                Male <input type="radio" name="gender" id="male">
+                Female <input type="radio" name="gender" id="Female">
+                Other <input type="radio" name="gender" id="Other">
+            </fieldset>
+        </h3>
+        <h3>DOB:<input type="date" name="dob" id=""required></h3>
+        <h3>ADDRESS: <textarea name="address" id="address" cols="150" rows="10"required placeholder="Enter your Address"></textarea></h3>
+        <h3>
+            BLOOD GROUP :
+            <select name="blood_group" id="blood">
+            <option value="">select your blood group</option>
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="AB">AB</option>
+            <option value="A-">A-</option>
+            <option value="B-">B-</option>
+            <option value="AB-">Ab-</option>
+            <option value="O">O</option>
+            <option value="O-">O-</option>
+        </select>
+        </h3>
+        <h3>
+            DEPARTMENT :
+            CSE <input type="radio" name="dept" id="CSE">
+            ECE <input type="radio" name="dept" id="ECE">
+            EEE <input type="radio" name="dept" id="EEE">
+            MEC <input type="radio" name="dept" id="MEC">
+        </h3>
+       
+        <h3>
+            Photo:<input type="button" value="choose file">
+        </h3>
+        
+        <h3>
+            Course:
+        C &nbsp;<input type="checkbox" >
+        C++&nbsp;<input type="checkbox" >
+        Java &nbsp;<input type="checkbox" >
+        AI &nbsp;<input type="checkbox" >
+         
+        </h3>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+</div>
+</body>
+</html>
